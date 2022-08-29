@@ -12,15 +12,11 @@ It can use single or paired end BAM files, count in strand-specific manner and f
 TEcount requires `python>=3.7`, `samtools>=1.14` and `bedtools>=2.30.0`. We strongly recommend installing TEcount, along with its requirements, in a conda environment:
 ```bash
 # Create a conda environment with required packages
-conda create -n tecount -c conda-forge -c bioconda "python>=3.7" "pip>=21.1" "samtools>=1.14" "bedtools>=2.30.0"
-
-# Clone this repository (and optionally checkout to a specific version)
-git clone https://github.com/bodegalab/tecount
-cd tecount
+conda create -n tecount -c conda-forge -c bioconda "python>=3.7" "samtools>=1.14" "bedtools>=2.30.0"
 
 # Install the package from the repository using pip from conda environment
 conda activate tecount
-pip install .
+pip install TEcount
 ```
 
 ## Usage
