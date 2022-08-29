@@ -17,7 +17,7 @@ TEcount requires `python>=3.7`, `samtools>=1.14` and `bedtools>=2.30.0`. We stro
 # Create a conda environment with required packages
 conda create -n tecount -c conda-forge -c bioconda "python>=3.7" "samtools>=1.14" "bedtools>=2.30.0"
 
-# Install the package from the repository using pip from conda environment
+# Install the package using pip from conda environment
 conda activate tecount
 pip install TEcount
 ```
