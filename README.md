@@ -1,4 +1,7 @@
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/bodegalab/tecount/Upload%20Python%20Package) ![PyPI](https://img.shields.io/pypi/v/TEcount) ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/bodegalab/tecount)
+
 # TEcount
+
 A package to count reads mapping on transposable elements (TEs) subfamilies, families and classes.
 
 ## Features
