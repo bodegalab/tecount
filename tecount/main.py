@@ -13,8 +13,8 @@ __version__ = '0.5.0'
 def parseArguments():
     parser = argparse.ArgumentParser(prog='TEcount',
                                      usage='TEcount -b <file.bam> -r <rmsk.bed.gz> [OPTIONS]',
-                                     description='Script to count reads mapping on Transposable Elements subfamilies, families and classes. Requires Python 3, samtools and bedtools.',
-                                     epilog='https://git.ingm.org/gebi/tecount')
+                                     description='Count reads mapping on Transposable Elements subfamilies, families and classes.',
+                                     epilog='Documentation and issue tracker: https://github.com/bodegalab/tecount')
     parser.add_argument('-b','--bam', required=True, help='scRNA-seq reads aligned to a reference genome')
     parser.add_argument('-r', '--rmsk', required=True, help='Genomic TE coordinates in bed format, with subfamily, family and class on columns 7, 8 and 9. Plain text or gzip-compressed.')
     parser.add_argument('-o', '--overlap', type=int, default=1, help='Minimum bp overlap between read and feature (default: 1).')
