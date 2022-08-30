@@ -1,4 +1,4 @@
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/bodegalab/tecount/Upload%20Python%20Package) ![PyPI](https://img.shields.io/pypi/v/TEcount) ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/bodegalab/tecount)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/bodegalab/tecount/Upload%20Python%20Package) ![PyPI](https://img.shields.io/pypi/v/tecount) ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/bodegalab/tecount)
 
 # TEcount
 
@@ -19,7 +19,7 @@ conda create -n tecount -c conda-forge -c bioconda "python>=3.7" "samtools>=1.14
 
 # Install the package using pip from conda environment
 conda activate tecount
-pip install TEcount
+pip install tecount
 ```
 
 ## Usage
