@@ -8,7 +8,7 @@ import multiprocessing
 from copy import deepcopy
 from pysam import AlignmentFile, index
 
-__version__ = '0.5.0'
+__version__ = '0.6.0'
 
 def parseArguments():
     parser = argparse.ArgumentParser(prog='TEcount',
