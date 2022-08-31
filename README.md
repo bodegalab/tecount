@@ -1,4 +1,6 @@
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/bodegalab/tecount/Upload%20Python%20Package) ![PyPI](https://img.shields.io/pypi/v/tecount) ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/bodegalab/tecount)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/bodegalab/tecount/Upload%20Python%20Package)
+![Conda (channel only)](https://img.shields.io/conda/vn/bioconda/tecount)
+![PyPI](https://img.shields.io/pypi/v/tecount)
 
 # TEcount
 
@@ -12,13 +14,16 @@ In case of reads aligning on multiple TE loci, it counts only one alignment occu
 It can use single or paired end BAM files, count in strand-specific manner and filter by a minimum read-TE overlap, among other features that can be discovered by running `TEcount --help`.
 
 ## Install
-TEcount requires `python>=3.7`, `samtools>=1.14` and `bedtools>=2.30.0`. We strongly recommend installing TEcount, along with its requirements, in a conda environment:
-```bash
-# Create a conda environment with required packages
-conda create -n tecount -c conda-forge -c bioconda "python>=3.7" "samtools>=1.14" "bedtools>=2.30.0"
 
-# Install the package using pip from conda environment
-conda activate tecount
+### Using conda  (recommended)
+We recommend using conda, as it will install all the required packages along TEcount.
+```bash
+conda create -n tecount -c conda-forge -c bioconda tecount
+```
+
+### Using pip
+If for any reason it's not possible or desiderable to use conda, it can be installed with pip and the following requirements must be installed manually: `python>=3.7`, `samtools>=1.14` and `bedtools>=2.30.0`.
+```bash
 pip install tecount
 ```
 
