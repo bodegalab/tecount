@@ -8,7 +8,7 @@ import multiprocessing
 from copy import deepcopy
 from pysam import AlignmentFile, index
 
-__version__ = '0.6.0'
+__version__ = '0.6.1'
 
 def parseArguments():
     parser = argparse.ArgumentParser(prog='TEcount',
@@ -85,13 +85,8 @@ def getRefs(bamFile, tmpdir):
 
 # Check if file is gzip
 def testGz(input_file):
-    '''Test if file is gzip'''
-    with gzip.open(input_file, 'rb') as f:
-        try:
-            f.read(1)
-            return True
-        except gzip.BadGzipFile:
-            return False
+    with open(input_file, 'rb') as test_f:
+        return test_f.read(2) == b'\x1f\x8b'
 
 # returns 3 dictionaries of empty sets of features in a tuple
 def getFeaturesDicts(bedFile, tmpdir):
