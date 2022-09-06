@@ -45,7 +45,7 @@ TEcount --help
 ```
 
 ## Acknowledgements
-Based on the transposable elements RNA-seq quantification strategy implemented in [1] by Sinha S.
+Based on the transposable elements RNA-seq quantification strategy implemented in [1](#1).
 
 ## References
-1. Marasca, F., Sinha, S., Vadalà, R. et al. LINE1 are spliced in non-canonical transcript variants to regulate T cell quiescence and exhaustion. Nat Genet 54, 180–193 (2022). https://doi.org/10.1038/s41588-021-00989-7
+<a name="1"></a>1. Marasca, F., Sinha, S., Vadalà, R. et al. LINE1 are spliced in non-canonical transcript variants to regulate T cell quiescence and exhaustion. Nat Genet 54, 180–193 (2022). https://doi.org/10.1038/s41588-021-00989-7
