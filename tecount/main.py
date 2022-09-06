@@ -111,9 +111,9 @@ def getFeaturesDicts(bedFile, tmpdir):
             subfams.add(sfam)
             fams.add(fam)
             classes.add(clas)
-    subfams = { x: set() for x in subfams }
-    fams = { x: set() for x in fams }
-    classes = { x: set() for x in classes }
+    subfams = { x: set() for x in sorted(list(subfams)) }
+    fams = { x: set() for x in sorted(list(fams)) }
+    classes = { x: set() for x in sorted(list(classes)) }
     return subfams, fams, classes
 
 # intersect reads with features using bedtools
