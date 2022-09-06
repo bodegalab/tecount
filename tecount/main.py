@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 import argparse, gzip, os, sys, subprocess
-from shutil import rmtree
+from shutil import rmtree, which
 from datetime import datetime
 from functools import partial
 import multiprocessing
@@ -41,6 +41,10 @@ def run_shell_cmd(cmd):
     pgid = os.getpgid(pid)
     stdout, stdin = p.communicate(cmd)
     return stdout.strip('\n')
+
+# Small function to check whether a command is in PATH
+def check_path(cmdname):
+    return which(cmdname) is not None
 
 # Small function to write out the current date and time
 def time():
@@ -243,6 +247,11 @@ def main():
 
     parser = parseArguments()
     args = parser.parse_args()
+
+    if not check_path('bedtools'):
+        sys.exit(f'Couldn\'t find bedtools in PATH. Please install bedtools and try again.')
+    if not check_path('samtools'):
+        sys.exit(f'Couldn\'t find samtools in PATH. Please install samtools and try again.')
 
     checkIndex(args.bam)
 
