@@ -1,7 +1,6 @@
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/bodegalab/tecount/Upload%20Python%20Package)
-[![install with bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg?style=flat)](https://bioconda.github.io/recipes/tecount/README.html)
-[![Conda (channel only)](https://img.shields.io/conda/vn/bioconda/tecount)](https://bioconda.github.io/recipes/tecount/README.html)
-[![PyPI](https://img.shields.io/pypi/v/tecount)](https://pypi.org/project/tecount/)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/bodegalab/tecount/Upload%20Python%20Package?logo=github)
+[![PyPI](https://img.shields.io/pypi/v/tecount?logo=python)](https://pypi.org/project/tecount/)
+[![install with bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg?style=flat&logo=anaconda)](https://bioconda.github.io/recipes/tecount/README.html)
 
 # TEcount
 
