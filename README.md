@@ -4,7 +4,7 @@
 
 # TEcount
 
-A package to count reads mapping on transposable elements (TEs) subfamilies, families and classes.
+A package to count reads mapping on transposable elements (TEs) subfamilies, families and classes in bulk RNA-seq.
 
 ## Features
 
