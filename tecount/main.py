@@ -8,7 +8,7 @@ import multiprocessing
 from copy import deepcopy
 from pysam import AlignmentFile, index
 
-__version__ = '1.0.0'
+__version__ = '1.0.1'
 
 def parseArguments():
     parser = argparse.ArgumentParser(prog='TEcount',
@@ -136,7 +136,7 @@ def isec(bamFile, bedFile, overlap, tmpdir, chr):
     cmd += f' awk \' $NF>={overlap} '
     cmd += ' { l=split($4,readid,"/"); readname=readid[1]; '
     # if single-end, set mate=1 even if no mate is recorded in read name
-    cmd += ' if(length(l)==1){mate=1}else{mate=readid[2]} '
+    cmd += ' if(l==1){mate=1}else{mate=readid[2]} '
     cmd += ' ori=($6==$12 ? "same" : "opposite"); '
     #cmd += ' ori=($6==$18 ? "same" : "opposite"); '
     cmd += ' OFS="\\t"; print readname,mate,$13,$14,$15,ori; } \' | '
