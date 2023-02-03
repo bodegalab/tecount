@@ -1,4 +1,4 @@
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/bodegalab/tecount/Upload%20Python%20Package?logo=github)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/bodegalab/tecount/python-publish.yml?logo=github&label=build)
 [![PyPI](https://img.shields.io/pypi/v/tecount?logo=python)](https://pypi.org/project/tecount/)
 [![install with bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg?style=flat&logo=anaconda)](https://bioconda.github.io/recipes/tecount/README.html)
 
